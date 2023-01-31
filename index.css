@@ -4,10 +4,18 @@
 }
 
 .text-platzi {
-    color: #97c93e
+  background-color:  #97c93e;
 }
 
 /* MAIN */
+.btn-platzi{
+  background-color:  #97c93e;
+}
+
+.btn-platzi:hover{
+  background-color: #89ad36;
+}
+
 .carousel-item {
   transition: transform 4s ease, opacity .4s ease-out;
 }
@@ -28,7 +36,25 @@
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
 }
+/* Cards */
+/* #speakers img{
+  height: 300px;
+  object-fit:cover;
+} */
+#speakers .container .row img{
+  max-height: 20vh;
+  object-fit: scale-down;
+  }
 
+/* place-time */
+#place-time img{
+  max-width: 100%;
+}
+
+#place-time{
+  background-color: #343a40;
+  color: white;
+}
 
 /* FOOTER */
 #footer {
