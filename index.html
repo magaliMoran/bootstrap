@@ -16,10 +16,10 @@
   </head>
 
 
-  <body>
+  <body  data-bs-spy=“scroll” data-bs-target="#navbar">
     
     <!-- HEADER NAVBAR -->
-    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
       <!-- navbar-dark acomodó las letras para verse(claras) bg-dark vista oscura -->
       <div class="container">
         <!-- se elimina -fluid del conteiner-fluid y asi quede alineado el heder y el footer -->
@@ -39,33 +39,29 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbar">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <!-- ms-auto alinea los elementos a la derecha s = start e = end -->
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">La Conferencia</a>
+              <a class="nav-link active" aria-current="page" href="#main">La Conferencia</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Los oradores</a>
+              <a class="nav-link" href="#speakers">Los oradores</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">El lugar y la fecha</a>
+              <a class="nav-link" href="#place-time">El lugar y la fecha</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">conviertete en Orador</a>
+              <a class="nav-link" href="#convierte-en-orador">conviertete en Orador</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-platzi" href="#">Comprar tickets</a>
               <!-- creacion de una nueva clase:text-platzi  -->
-            </li>
-            
-            
-          </ul>
-          
+            </li>           
+          </ul>          
         </div>
       </div>
     </nav>
-
     <!-- MAIN -->
     <!-- carousel-fade (es otra forma de disposicion de la presentacion de las imagenes en el carrusel), data-pause=“false” al hacer hove con el mause sobre la imagen  hace que no se detenga la transicion del carrusel -->
     <main id="main">
@@ -92,21 +88,10 @@
                 <!-- class="btn btn-success" se cambiara el color del boton, se agregara otra clase btn btn-platzi -->
                 <button type="button" class="btn btn-platzi">Comprar ticket</button>
               </div>
-
             </div>
-
           </div> 
-
         </div>
       </div>
-      <!-- <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a> -->
     </div>
   </main>
 <!-- Speakers -->
