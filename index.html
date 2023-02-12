@@ -16,7 +16,7 @@
   </head>
 
 
-  <body  data-bs-spy=“scroll” data-bs-target="#navbar">
+  <body  data-bs-spy=“scroll” data-bs-target="#navbar" data-bs-offset="57">
     
     <!-- HEADER NAVBAR -->
     <nav id="header" class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
@@ -43,7 +43,7 @@
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <!-- ms-auto alinea los elementos a la derecha s = start e = end -->
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#main">La Conferencia</a>
+              <a class="nav-link " aria-current="page" href="#main">La Conferencia</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#speakers">Los oradores</a>
@@ -55,7 +55,7 @@
               <a class="nav-link" href="#convierte-en-orador">conviertete en Orador</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-platzi" href="#">Comprar tickets</a>
+              <a class="nav-link text-platzi" href="#" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar tickets</a>
               <!-- creacion de una nueva clase:text-platzi  -->
             </li>           
           </ul>          
@@ -86,7 +86,7 @@
                 <p class="d-none d-md-block">Platzi Conf llega por primera vez a Hawaii</p>
                 <a href="#" class="btn btn-outline-light">Quiero ser orador</a>
                 <!-- class="btn btn-success" se cambiara el color del boton, se agregara otra clase btn btn-platzi -->
-                <button type="button" class="btn btn-platzi">Comprar ticket</button>
+                <button type="button" class="btn btn-platzi" data-bs-toggle="modal" data-bs-target="#modalCompra">Comprar ticket</button>
               </div>
             </div>
           </div> 
@@ -260,6 +260,53 @@
         </div>
       </div>
     </footer>
+
+    <!-- modal -->
+    <div class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Comprar ticket</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form class="was-validated">
+        
+              <!-- <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div> -->
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1">@</span>
+                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+              </div>
+
+              <div class="input-group mb-3">
+                <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                <!-- <label for="floatingPassword">Password</label> -->
+              </div>
+
+              <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="validationFormCheck1" required>
+                <label class="form-check-label" for="validationFormCheck1">Check this checkbox</label>
+                <div class="invalid-feedback">Example invalid feedback text</div>
+              </div>
+
+          </form>
+          <div class="alert alert-warning" role="alert">
+            You will be receving an email.
+          </div>
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-platzi">Comprar</button>
+        </div>
+          </div>
+          
+        </div>
+      </div>
+  
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     
